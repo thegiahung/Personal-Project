@@ -1,0 +1,15 @@
+add collection mybooks.csv
+add member Python
+add member Java
+add member C
+rent 100000 111112
+rent 100000 111113
+rent 100001 111114
+rent 100002 111115
+Member books 100000
+member books 100001
+relinquish all 100000
+relinquish all 100001
+member history 100000
+member history 100001
+exit

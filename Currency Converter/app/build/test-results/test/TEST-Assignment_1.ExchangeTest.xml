@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Assignment_1.ExchangeTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2022-09-29T06:34:23" hostname="T_Hung" time="0.037">
+  <properties/>
+  <testcase name="TestSetCurr1()" classname="Assignment_1.ExchangeTest" time="0.0"/>
+  <testcase name="TestSetCurr2()" classname="Assignment_1.ExchangeTest" time="0.0"/>
+  <testcase name="TestConstructor2()" classname="Assignment_1.ExchangeTest" time="0.0"/>
+  <testcase name="TestGetCurr1()" classname="Assignment_1.ExchangeTest" time="0.0"/>
+  <testcase name="TestGetCurr2()" classname="Assignment_1.ExchangeTest" time="0.001"/>
+  <testcase name="TestSetDate()" classname="Assignment_1.ExchangeTest" time="0.0"/>
+  <testcase name="TestToString()" classname="Assignment_1.ExchangeTest" time="0.014"/>
+  <testcase name="TestGetReverse()" classname="Assignment_1.ExchangeTest" time="0.007"/>
+  <testcase name="TestConstructor()" classname="Assignment_1.ExchangeTest" time="0.0"/>
+  <testcase name="TestGetDate()" classname="Assignment_1.ExchangeTest" time="0.0"/>
+  <testcase name="TestGetInfo()" classname="Assignment_1.ExchangeTest" time="0.006"/>
+  <testcase name="TestSetExRate()" classname="Assignment_1.ExchangeTest" time="0.0"/>
+  <testcase name="TestGetExRate()" classname="Assignment_1.ExchangeTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

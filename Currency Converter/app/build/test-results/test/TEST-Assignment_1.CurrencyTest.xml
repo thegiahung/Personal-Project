@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Assignment_1.CurrencyTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-09-29T06:34:23" hostname="T_Hung" time="0.022">
+  <properties/>
+  <testcase name="TestSetName()" classname="Assignment_1.CurrencyTest" time="0.004"/>
+  <testcase name="TestSetRate()" classname="Assignment_1.CurrencyTest" time="0.008"/>
+  <testcase name="TestGetIsPopular()" classname="Assignment_1.CurrencyTest" time="0.003"/>
+  <testcase name="TestGetCurrentRate2()" classname="Assignment_1.CurrencyTest" time="0.0"/>
+  <testcase name="TestReadRate()" classname="Assignment_1.CurrencyTest" time="0.0"/>
+  <testcase name="TestGetHistory()" classname="Assignment_1.CurrencyTest" time="0.0"/>
+  <testcase name="TestGetCurrentRate()" classname="Assignment_1.CurrencyTest" time="0.0"/>
+  <testcase name="TestSetIsPopular()" classname="Assignment_1.CurrencyTest" time="0.0"/>
+  <testcase name="TestGetName()" classname="Assignment_1.CurrencyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

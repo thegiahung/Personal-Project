@@ -1,0 +1,17 @@
+add member Python
+add member Java
+add member Ruby
+add member Tom Cruise
+add collection books.csv
+rent 100000 111111
+relinquish 100000 111111
+rent 100001 111111
+rent 100002 111111
+relinquish 100002 111111
+relinquish 100002 200000
+rent 100003 111115
+rent 100003 111116
+rent 100003 111117
+relinquish 100003 111115
+relinquish all 100003
+exit

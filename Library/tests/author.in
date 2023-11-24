@@ -1,0 +1,10 @@
+List author
+author Harper Lee
+author J.R.R. Tolkien
+add collection books.csv
+list authors
+author Harper Lee
+author J.R.R. Tolkien
+author Me
+author Her
+exit

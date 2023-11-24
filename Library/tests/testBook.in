@@ -1,0 +1,11 @@
+book 111111
+book 111111 long
+add book books.csv 111111
+book 111111
+book 111111 long
+add collection books.csv
+book 111112
+book 111112 long
+book 10
+book 12 long
+exit

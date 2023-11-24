@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Assignment_1.TestFileUtil" tests="14" skipped="0" failures="0" errors="0" timestamp="2022-09-29T06:34:23" hostname="T_Hung" time="0.08">
+  <properties/>
+  <testcase name="TestGetAllCurr2()" classname="Assignment_1.TestFileUtil" time="0.021"/>
+  <testcase name="TestChanePop()" classname="Assignment_1.TestFileUtil" time="0.009"/>
+  <testcase name="TestGetAllCurr()" classname="Assignment_1.TestFileUtil" time="0.01"/>
+  <testcase name="TestWriteUserinFile()" classname="Assignment_1.TestFileUtil" time="0.008"/>
+  <testcase name="TestWriteIn()" classname="Assignment_1.TestFileUtil" time="0.005"/>
+  <testcase name="TestWriteIn1()" classname="Assignment_1.TestFileUtil" time="0.003"/>
+  <testcase name="TestWriteUserinFile12()" classname="Assignment_1.TestFileUtil" time="0.0"/>
+  <testcase name="TestReadUserinFile()" classname="Assignment_1.TestFileUtil" time="0.005"/>
+  <testcase name="TestGetHistory()" classname="Assignment_1.TestFileUtil" time="0.0"/>
+  <testcase name="TestReadAllInfo1()" classname="Assignment_1.TestFileUtil" time="0.004"/>
+  <testcase name="TestReadUserinFile1()" classname="Assignment_1.TestFileUtil" time="0.003"/>
+  <testcase name="TestReadAllInfo()" classname="Assignment_1.TestFileUtil" time="0.002"/>
+  <testcase name="TestGetByLine()" classname="Assignment_1.TestFileUtil" time="0.001"/>
+  <testcase name="TestAddNewCurr()" classname="Assignment_1.TestFileUtil" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+rent 100000 111111
+add member Python
+add member Java
+rent 100000 111111
+add book books.csv 111111
+rent 100000 111111
+relinquish 100000 111111
+rent 100001 111111
+exit

@@ -1,0 +1,14 @@
+Member books 100000
+Add member Python
+Add collection books.csv
+Member books 100000
+Member books 100003
+Rent 100000 111111
+Member books 100000
+Rent 100000 111112
+Member books 100000
+Relinquish 100000 111112
+Member books 100000
+Relinquish 100000 111111
+Member books 100000
+Exit

@@ -1,0 +1,17 @@
+Add collection mybooks.csv
+number copies
+add member Python
+add member Java
+add member C
+rent 100000 111111
+rent 100000 111123
+relinquish all 100000
+rent 100001 111122
+rent 100001 111123
+relinquish all 100001
+common 100000 100001
+rent 100002 111119
+rent 100002 111123
+relinquish all 100002
+common 100000 100001 100002
+exit

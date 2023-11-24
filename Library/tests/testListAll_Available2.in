@@ -1,0 +1,8 @@
+Add book books.csv 111111
+Add member Someone
+Rent 100000 111111
+list all
+list all long
+list available
+list available long
+EXIT

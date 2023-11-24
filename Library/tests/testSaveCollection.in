@@ -1,0 +1,6 @@
+add book books.csv 111111
+add book books.csv 111112
+save collection books2.csv
+add collection books.csv
+save collection books3.csv
+exit

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Exchange.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">Assignment_1</a> &gt; <span class="el_source">Exchange.java</span></div><h1>Exchange.java</h1><pre class="source lang-java linenums">package Assignment_1;
+
+import java.util.List;
+import java.util.HashMap;
+
+public class Exchange {
+    private String date; // record date
+    private String currency_1; // first currency
+    private String currency_2; // second currency
+    private double exchangeRate; // currency rate
+    // private String upOrDown; //checking increase or decrease compared to before
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+<span class="fc" id="L15">    public Exchange(String date, String currency_1, String currency_2, Double exchangeRate) {</span>
+<span class="fc" id="L16">        this.date = date;</span>
+<span class="fc" id="L17">        this.currency_1 = currency_1;</span>
+<span class="fc" id="L18">        this.currency_2 = currency_2;</span>
+<span class="fc" id="L19">        this.exchangeRate = exchangeRate;</span>
+        // this.upOrDown = upOrDown;
+<span class="fc" id="L21">    }</span>
+
+<span class="fc" id="L23">    public Exchange(String digit[]) {</span>
+<span class="fc" id="L24">        this.date = digit[0];</span>
+<span class="fc" id="L25">        this.currency_1 = digit[1];</span>
+<span class="fc" id="L26">        this.currency_2 = digit[2];</span>
+<span class="fc" id="L27">        this.exchangeRate = Double.parseDouble(digit[3]);</span>
+<span class="fc" id="L28">    }</span>
+
+<span class="fc" id="L30">    public Exchange() {</span>
+
+<span class="fc" id="L32">    }</span>
+
+    public String getDate() {
+<span class="fc" id="L35">        return date;</span>
+    }
+
+    public void setDate(String date) {
+<span class="fc" id="L39">        this.date = date;</span>
+<span class="fc" id="L40">    }</span>
+
+    public String getCurrency_1() {
+<span class="fc" id="L43">        return currency_1;</span>
+    }
+
+    public void setCurrency_1(String currency_1) {
+<span class="fc" id="L47">        this.currency_1 = currency_1;</span>
+<span class="fc" id="L48">    }</span>
+
+    public String getCurrency_2() {
+<span class="fc" id="L51">        return currency_2;</span>
+    }
+
+    public void setCurrency_2(String currency_2) {
+<span class="fc" id="L55">        this.currency_2 = currency_2;</span>
+<span class="fc" id="L56">    }</span>
+
+    public double getExchangeRate() {
+<span class="fc" id="L59">        return exchangeRate;</span>
+    }
+
+    public void setExchangeRate(double exchangeRate) {
+<span class="fc" id="L63">        this.exchangeRate = exchangeRate;</span>
+<span class="fc" id="L64">    }</span>
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Updating the correspond currencies simultaneously
+    public Exchange getReverseCurrency() {
+<span class="fc" id="L69">        Exchange exchange = new Exchange();</span>
+<span class="fc" id="L70">        exchange.setDate(this.getDate());</span>
+<span class="fc" id="L71">        exchange.setCurrency_1(this.getCurrency_2());</span>
+<span class="fc" id="L72">        exchange.setCurrency_2(this.getCurrency_1());</span>
+<span class="fc" id="L73">        double reverse = 1 / this.getExchangeRate(); // reverse the exchange rate by 1 / currency rate</span>
+<span class="pc bpc" id="L74" title="1 of 2 branches missed.">        if ((reverse + &quot;&quot;).contains(&quot;.&quot;)) {</span>
+<span class="fc" id="L75">            String strArr[] = (reverse + &quot;&quot;).split(&quot;\\.&quot;);</span>
+<span class="fc" id="L76">            String newStr = &quot;&quot;;</span>
+<span class="pc bpc" id="L77" title="1 of 2 branches missed.">            if (strArr[1].length() &gt; 2) {</span>
+<span class="fc" id="L78">                newStr = strArr[0] + &quot;.&quot; + strArr[1].substring(0, 2);</span>
+            } else {
+<span class="nc" id="L80">                newStr = strArr[0] + &quot;.&quot; + strArr[1];</span>
+            }
+<span class="fc" id="L82">            exchange.setExchangeRate(Double.parseDouble(newStr));</span>
+        }
+<span class="fc" id="L84">        exchange.setExchangeRate(reverse);</span>
+<span class="fc" id="L85">        return exchange;</span>
+    }
+
+    public String getInfo() {
+<span class="fc" id="L89">        return this.date + &quot;,&quot; + this.currency_1 + &quot;,&quot; + this.currency_2 + &quot;,&quot; + this.exchangeRate;</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="fc" id="L94">        return &quot;{&quot; +</span>
+                &quot;insertDate='&quot; + date + '\'' +
+                &quot;, country1='&quot; + currency_1 + '\'' +
+                &quot;, country2='&quot; + currency_2 + '\'' +
+                &quot;, exchangeRate=&quot; + exchangeRate +
+                '}';
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

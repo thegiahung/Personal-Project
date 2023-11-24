@@ -1,0 +1,13 @@
+add collection mybooks.csv
+list genres
+list authors
+list all long
+add member Python
+add member Java
+add member C
+rent 100000 111112
+rent 100000 111113
+relinquish all 100000
+rent 100001 111114
+relinquish 100001 111114
+exit

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FileUtil.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">Assignment_1</a> &gt; <span class="el_source">FileUtil.java</span></div><h1>FileUtil.java</h1><pre class="source lang-java linenums">package Assignment_1;
+
+import java.io.*;
+import java.nio.file.Paths;
+
+import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import java.lang.annotation.*;
+
+<span class="fc" id="L12">public class FileUtil {</span>
+
+<span class="fc" id="L14">    public ArrayList&lt;Exchange&gt; exchanges = new ArrayList&lt;&gt;();</span>
+
+    /*
+     * Write in username and password into userInfo csv file
+     * Information columns: Name, password, authority(0: normal user, 1: admin user)
+     */
+    @Generated
+    public void writeUserInFile(User user) {
+        try {
+
+            String abs_path = new java.io.File(&quot;.&quot;).getCanonicalPath();
+            File file = new File(abs_path + &quot;src/main/java/Assignment_1/database/userInfo.csv&quot;);
+            if (!file.exists()) {
+                throw new IOException(&quot;Relative file: userInfo.csv&quot;);
+            }
+            FileWriter writer = new FileWriter(file, true);
+            String isadmin;
+            if (user.getauthority()) {
+                isadmin = &quot;1&quot;;
+            } else {
+                isadmin = &quot;0&quot;;
+            }
+            writer.write(user.getName() + &quot;,&quot; + user.getPsw() + &quot;,&quot; + isadmin + &quot;\n&quot;);
+            writer.close();
+        } catch (Exception e) {
+            return;
+        }
+    }
+
+    /*
+     * Read through the user txt file then return it as a list
+     * Format of users' information: name, password, authority(0: normal user, 1:
+     * admin user)
+     */
+    @Generated
+    public List&lt;User&gt; readUserFromFile() {
+        try {
+            File file = new File(&quot;src/main/java/Assignment_1/database/userInfo.csv&quot;);
+
+            FileReader reader = new FileReader(file);
+
+            try (BufferedReader bufferedReader = new BufferedReader(reader)) {
+                String line = &quot;&quot;;
+                List&lt;User&gt; list = new ArrayList&lt;&gt;();
+                while ((line = bufferedReader.readLine()) != null) {
+                    String[] split = line.split(&quot;,&quot;);
+
+                    // Attribute 3: User have admin authority or not
+
+                    boolean authority;
+                    if (split[2].compareTo(&quot;0&quot;) == 0) {
+                        authority = false;
+                    } else {
+                        authority = true;
+                    }
+                    User user = new User(split[0], split[1], authority);
+                    list.add(user);
+                }
+                bufferedReader.close();
+                return list;
+            } catch (Exception e) {
+                throw new IOException(&quot;Relative file: userInfo.csv&quot;);
+            }
+        } catch (Exception e) {
+            return null;
+        }
+
+    }
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    /*
+     * Reading through the whole csv file, format for every single line[date,
+     * currencyname_1, currencyname_2, rate]
+     * Read the whole txt file line by line
+     * Columns: Date, currency1's name, currency2's name, exchange rate
+     */
+    @Generated
+    public void ReadAllInfo() {
+        try {
+            String filePath = &quot;src/main/java/Assignment_1/database/CurrencyInfo.csv&quot;;
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));
+            String line = &quot;&quot;; // Read through every whole line
+
+            while ((line = bufferedReader.readLine()) != null) { // return null when it finishes reading
+                // String: [date, currencyname_1, currencyname_2, rate]
+                String currencyInfo[] = line.split(&quot;,&quot;);
+                Exchange exchange = new Exchange(currencyInfo);
+                exchanges.add(exchange);
+            }
+
+            bufferedReader.close();
+        } catch (Exception e) {
+            return;
+        }
+
+    }
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    // Write in all currency information into the txt file. New record will be a new
+    // line
+    @Generated
+    public void WriteIn(Exchange newExchange) {
+        try {
+            FileWriter fw = new FileWriter(&quot;src/main/java/Assignment_1/database/CurrencyInfo.csv&quot;, true);
+            BufferedWriter writer = new BufferedWriter(fw);
+
+            writer.write(newExchange.getInfo());
+            writer.close();
+
+            // Add this new exchange instance into exchanges list
+            this.exchanges.add(newExchange);
+        } catch (Exception e) {
+            return;
+        }
+
+    }
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    // Get all the history data
+    public ArrayList&lt;Exchange&gt; getAllHistory() {
+<span class="fc" id="L137">        return this.exchanges;</span>
+    }
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    /*
+     * Boolean flag == True: return currencies' name list
+     * Boolean flag == False: return popular currencies' name list (length = 4)
+     */
+    @Generated
+    public List&lt;String&gt; getAllCurrencies(boolean flag) {
+        try {
+            List&lt;String&gt; list = new ArrayList&lt;&gt;();
+            String path = &quot;src/main/java/Assignment_1/database/CurencyName.csv&quot;;
+            BufferedReader reader = new BufferedReader(new FileReader(path));
+            String line = &quot;&quot;;
+
+            // Model 1: all currencies' name
+            if (flag) {
+                while ((line = reader.readLine()) != null) {
+                    list.add(line.split(&quot;,&quot;)[0]);
+                }
+            }
+            // Model 2: popluar currencies name
+            // In the csv file, 0: is not popular currency, 1: is popular currcency]
+            else {
+                while ((line = reader.readLine()) != null) {
+
+                    if (line.split(&quot;,&quot;)[1].compareTo(&quot;1&quot;) == 0) {
+                        list.add(line.split(&quot;,&quot;)[0]);
+                    }
+                }
+            }
+
+            reader.close();
+            return list;
+        } catch (Exception e) {
+            return null;
+        }
+
+    }
+
+    // 2.Return the total number of lines in the txt file
+    public int getListLength() {
+<span class="nc" id="L181">        return this.exchanges.size();</span>
+    }
+
+    // 3.According to the input line number to return the required content e.g. line
+    // 32nd, {2022-09-03,AUD,USD,1.5}
+    public Exchange getByLine(int line) {
+<span class="fc" id="L187">        return this.exchanges.get(line);</span>
+    }
+
+    /*
+     * currency1: new popular currcency's name
+     * currency2: name of currency which will be replaced in popular list
+     */
+    public boolean changePopular(String currency1, String currency2) {
+        try {
+            // Part 1: Read the csv file
+<span class="fc" id="L197">            BufferedReader reader = new BufferedReader(</span>
+                    new FileReader(&quot;src/main/java/Assignment_1/database/CurencyName.csv&quot;));
+
+<span class="fc" id="L200">            String line = &quot;&quot;;</span>
+
+<span class="fc" id="L202">            List&lt;String&gt; ls = new ArrayList&lt;&gt;();</span>
+
+<span class="fc bfc" id="L204" title="All 2 branches covered.">            while ((line = reader.readLine()) != null) {</span>
+<span class="fc" id="L205">                ls.add(line);</span>
+            }
+
+<span class="fc" id="L208">            reader.close();</span>
+
+            // Part 2: Rewrite csv file
+<span class="fc" id="L211">            BufferedWriter writer = new BufferedWriter(</span>
+                    new FileWriter(&quot;src/main/java/Assignment_1/database/CurencyName.csv&quot;));
+
+<span class="fc bfc" id="L214" title="All 2 branches covered.">            for (int i = 0; i &lt; ls.size(); i++) {</span>
+                // Found currceny1
+<span class="fc bfc" id="L216" title="All 2 branches covered.">                if (ls.get(i).split(&quot;,&quot;)[0].compareTo(currency1) == 0) {</span>
+<span class="fc" id="L217">                    writer.write(ls.get(i).split(&quot;,&quot;)[0] + &quot;,&quot; + &quot;1&quot;);</span>
+                }
+                // Found currency2
+<span class="fc bfc" id="L220" title="All 2 branches covered.">                else if (ls.get(i).split(&quot;,&quot;)[0].compareTo(currency2) == 0) {</span>
+<span class="fc" id="L221">                    writer.write(ls.get(i).split(&quot;,&quot;)[0] + &quot;,&quot; + &quot;0&quot;);</span>
+                }
+                // Other rows
+                else {
+<span class="fc" id="L225">                    writer.write(ls.get(i));</span>
+                }
+<span class="fc" id="L227">                writer.newLine();</span>
+            }
+<span class="fc" id="L229">            writer.close();</span>
+<span class="fc" id="L230">            return true;</span>
+<span class="nc" id="L231">        } catch (Exception e) {</span>
+<span class="nc" id="L232">            return false;</span>
+        }
+
+    }
+
+    // Append a new currency to the end of CurrencyName.csv
+    public void addNewCurrency(String currcenyNameorSymbol) {
+        try {
+<span class="fc" id="L240">            FileWriter fw = new FileWriter(&quot;src/main/java/Assignment_1/database/CurencyName.csv&quot;, true);</span>
+<span class="fc" id="L241">            BufferedWriter writer = new BufferedWriter(fw);</span>
+
+<span class="fc" id="L243">            writer.write(currcenyNameorSymbol + &quot;,0\n&quot;);</span>
+<span class="fc" id="L244">            writer.close();</span>
+<span class="nc" id="L245">        } catch (Exception e) {</span>
+<span class="nc" id="L246">            return;</span>
+<span class="fc" id="L247">        }</span>
+
+<span class="fc" id="L249">    }</span>
+
+    @Documented
+
+    public @interface Generated {
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

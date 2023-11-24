@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Rate_date.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">Assignment_1</a> &gt; <span class="el_source">Rate_date.java</span></div><h1>Rate_date.java</h1><pre class="source lang-java linenums">package Assignment_1;
+
+import java.util.Date;
+
+import Assignment_1.Currency;
+
+import java.text.SimpleDateFormat;
+
+// This object is storing in
+public class Rate_date {
+    double exchange_rate;
+    // Date format: YYYY-MM-DD
+    String date;
+
+<span class="fc" id="L15">    public Rate_date(double exchange_rate, String date) {</span>
+<span class="fc" id="L16">        this.exchange_rate = exchange_rate;</span>
+<span class="fc" id="L17">        this.date = date;</span>
+<span class="fc" id="L18">    }</span>
+
+    public double getRate() {
+<span class="fc" id="L21">        return this.exchange_rate;</span>
+    }
+
+    // Returned string in YYYY-MM-DD format
+    public String getDate() {
+<span class="fc" id="L26">        return this.date;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

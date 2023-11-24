@@ -1,0 +1,16 @@
+book history 111115
+book history 111115 long
+add book books.csv 111111
+add member Java
+add member Python
+rent 100000 111111
+relinquish 100000 111111
+book history 111111
+add collection books.csv
+book history 111112
+rent 100000 111112
+relinquish 100000 111112
+rent 100001 111112
+relinquish 100001 111112
+book history 111112
+exit
