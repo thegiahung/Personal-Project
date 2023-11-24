@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c167fd37-afa5-4ba9-9df6-7a46eb9b3c13" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/App$Generated.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/App$Generated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/CashRegister$Generated.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/CashRegister$Generated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/CashRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/CashRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/Cashier$Generated.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/Cashier$Generated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/Cashier.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/Cashier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/EraserThread$Generated.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/EraserThread$Generated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/EraserThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/EraserThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/FileUtil$Generated.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/FileUtil$Generated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/FileUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/JsonReader$Generated.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/JsonReader$Generated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/Owner$Generated.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/Owner$Generated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/Owner.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/Owner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/Seller$Generated.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/Seller$Generated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/Seller.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/Seller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/UI$Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/UI$Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/UI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/VendingMachine$Generated.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/VendingMachine$Generated.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/VendingMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/VendingMachine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/main/Assignment2/jsonreader.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/main/Assignment2/jsonreader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/test/Assignment2/OwnerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/test/Assignment2/OwnerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/test/Assignment2/VendingMachineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/test/Assignment2/VendingMachineTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/Assignment2/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/Assignment2/FileUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/jacoco/test.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/Assignment2/VendingMachine.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/Assignment2/VendingMachine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/Assignment2/VendingMachine.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/Assignment2/VendingMachine.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/Assignment2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/Assignment2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/Assignment2/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/Assignment2/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/jacocoTestReport.csv" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/jacocoTestReport.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/Assignment2.AppTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/Assignment2.AppTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/packages/Assignment2.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/packages/Assignment2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-Assignment2.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/TEST-Assignment2.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Assignment2/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Assignment2/Cashier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Assignment2/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Assignment2/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Assignment2/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Assignment2/VendingMachine.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GwFbBFU1KP0MWT9FSZxmCQK7ed" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Third_year_first_semester/SOFT2412/RE08_Group_2_Assignment2&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="VendingMachineTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Assignment2.VendingMachineTest" />
+      <module name="Assignment2.app.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Assignment2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.VendingMachineTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c167fd37-afa5-4ba9-9df6-7a46eb9b3c13" name="Changes" comment="" />
+      <created>1667291811515</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667291811515</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
